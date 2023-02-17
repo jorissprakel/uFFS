@@ -6,15 +6,22 @@ by Martijn van Galen, Annemarie Bok, Taieesa Peshkovsky, Jasper van der Gucht, B
 Both scripts used for the uFFS experimental data analysis and scripts used to perform and analyse the Kinetic Monte Carlo Simulations are provided:
 
 -------------------------- uFFS experimental data analysis scripts --------------------
-the uFFS_experimental_data_analysis/ folder contains a sample dataset of one measurement, and the data analysis scripts used in the article.
+
+The uFFS_experimental_data_analysis/ folder contains a sample dataset of one measurement, and the data analysis scripts used in the article.
 To analyse a uFFS dataset, the following analysis scripts should be run in this order:
 
 1.preprocess_and_track: 	This script locates the dataset, carries out the pre-processing as described in SI section S5, tracks the particles in the dataset and stores the trajectories.
+
 2.overlay_traces:		This script makes plots in which the particle trajectories are overlayed on the dataset. This allows the user to check if the particle tracking went well.
+
 3.compute_dissociationtimes:	This script Computes the dissociation time of each particle from the trajectories
+
 4.Plot_fit_Ptcurves:		This script plots the P-t curves using the dissociation times and fits them with a stretched exponential function to compute the lifetimes. It also computes the applied shear force from the flowrate data.
+
 5.Plot_Force_lifetimecurves:	This script plots the force-lifetime curves, using the shearforces and lifetimes determined by 4.Plot_fit_Ptcurves.py.
+
 Please note that the provided sample dataset is not a full measurement, so scripts 4 and 5 do not work on this dataset.
+
 
 ----------------------------- Kinetic Monte Carlo Simulations -------------------------
 Contents:
