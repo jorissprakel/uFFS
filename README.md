@@ -54,12 +54,7 @@ Here, we will go over all the simulation scripts in the simulationscripts/ folde
 
 --- 1. Generate input parameters for the simulations ---
 
--generate_measurearchitecture.py:
-This file allows the user to specify all the simulation parameters, and generates a number of input files that can be read by the run_simulation.py script. 
-In the top of the file, a list of variable parameters is specified: The single-bond mechanochemical parameters (dx,koff,0), the applied flowrates (=shear stress), and the number of repeats.
-Below that, the remaining constant parameters is specified, such as the size of the particle, kT, etc.
-When run using "python generate_measurearchitecture.py", this script creates the ../simulation/ folder and generates an input.txt file containing the parameters for each individual simulation.
-Furthermore, a simulationslist.txt file is generated, which is a list of all the simulations that need to be performed.
+-generate_measurearchitecture.py: This file allows the user to specify all the simulation parameters, and generates a number of input files that can be read by the run_simulation.py script. In the top of the file, a list of variable parameters is specified: The single-bond mechanochemical parameters (dx,koff,0), the applied flowrates (=shear stress), and the number of repeats. Below that, the remaining constant parameters is specified, such as the size of the particle, kT, etc. When run using "python generate_measurearchitecture.py", this script creates the ../simulation/ folder and generates an input.txt file containing the parameters for each individual simulation. Furthermore, a simulationslist.txt file is generated, which is a list of all the simulations that need to be performed.
 
 -generate_input.py: This script is called by generate_measurementarchitecture.py
 
