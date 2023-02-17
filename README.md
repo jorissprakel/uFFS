@@ -77,7 +77,7 @@ This is the main KMC simulation function, which is called by run_simulation.py. 
 	
 	-Equilibrate.py:		This function equilibrates the free energy of the system by rotating and translating the bead using a grandient descent approach
 	
-	-RotateBead.py: 	This function is called by Equilibrate.py. It is used to recalculate the positions p1 of the linkers on the particle as the particle rotates.
+	-RotateBead.py: 		This function is called by Equilibrate.py. It is used to recalculate the positions p1 of the linkers on the particle as the particle rotates.
 	
 	-TotalLinkerForceAndTorque.py:	This function is called by both Equilibrate.py and rollingbead_f.py. It computes the total extensional force F and torque T all bound linkers apply to the particle, the relative extension x, and finaly the x component of the force F. 
 	
