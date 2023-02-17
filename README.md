@@ -1,6 +1,6 @@
 # Microfluidic Force Spectroscopy (uFFS) Data Analysis and Simulation Scripts.
 
-This depository contains the scripts used in the paper "Rapid Molecular Mechanotyping using Microfluidic Force Spectroscopy", 
+This depository contains the scripts used in the paper "Rapid Molecular Mechanotyping with Microfluidic Force Spectroscopy", 
 by Martijn van Galen, Annemarie Bok, Taieesa Peshkovsky, Jasper van der Gucht, Bauke Albada and Joris Sprakel.
 
 Please note that the scripts are annotated with comments, to instruct the user.
