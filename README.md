@@ -24,14 +24,20 @@ Please note that the provided sample dataset is not a full measurement, so scrip
 
 
 ----------------------------- Kinetic Monte Carlo Simulations -------------------------
+
 Contents:
+
 -example_simulation_folder: test example of a typical simulation series
+
 -simulations_varyingdensity: Contains all scripts required to perform the simulation series with varying bond density (Fig. 5B)
+
 -simulations_varyingBasepairs: Contains all scripts required to perform the simulation series with varying numbers of basepairs (Fig. 5C)
--simulations_ForceDistribution: Contains all scripts required to perform the simulation series for the force distribution heatmaps (Fig. 5D)
+
+-simulations_ForceDistribution: Contains all scripts required to perform the simulation series for the force distribution heatmaps (Fig. 5D,E)
 
 Here follows a description on how to perform the simulations, along with an overview of all the scripts in the folders mentioned above.
 Each simulation series contains the following subfolders:
+
 
 Simulation_series_name/
 	simulationscripts/
@@ -44,7 +50,9 @@ The analysisscripts/ folder contains all the scripts required to analyse the raw
 and processed results after running the analysisscripts will be stored in the analysis/ folder.
 
 Here, we will go over all the simulation scripts in the simulationscripts/ folder required to 1. generate the input parameters for a simulation series and 2. run the simulations. 
+
 --- 1. Generate input parameters for the simulations ---
+
 -generate_measurearchitecture.py:
 This file allows the user to specify all the simulation parameters, and generates a number of input files that can be read by the run_simulation.py script. 
 In the top of the file, a list of variable parameters is specified: The single-bond mechanochemical parameters (dx,koff,0), the applied flowrates (=shear stress), and the number of repeats.
@@ -53,6 +61,7 @@ When run using "python generate_measurearchitecture.py", this script creates the
 Furthermore, a simulationslist.txt file is generated, which is a list of all the simulations that need to be performed.
 
 -generate_input.py: This script is called by generate_measurementarchitecture.py
+
 -generate_simulationslist.py: This script is called by generate_measurearchitecture.py
 A typical example of an instance after running the generate_measurementarchitecture.py script can be found as: "example_simulation_folder/".
 
